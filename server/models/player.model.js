@@ -11,7 +11,15 @@ const PlayerSchema = new mongoose.Schema({
         required: [true, "Position is required"],
         minlength: [3, "Position must be at least 3 characters"]
     },
-    status: {
+    status1: {
+        type: String,
+        default: "undecided"
+    },
+    status2: {
+        type: String,
+        default: "undecided"
+    },
+    status3: {
         type: String,
         default: "undecided"
     }
